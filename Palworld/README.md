@@ -1,0 +1,75 @@
+# Palworld
+
+Version du : 05/07/2025 (Update Terraria)
+
+# Fichiers
+
+|File|Description|
+|~/serverfiles/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini|Configuration du serveur|
+
+
+bIsPublic=True
+bShowPlayerList=True
+bAutoSave=True
+AutoSaveIntervalMinutes=15
+Difficulty=None
+DayTimeSpeedRate=1.000000
+NightTimeSpeedRate=1.000000
+ExpRate=1.000000
+PalCaptureRate=1.000000
+PalSpawnNumRate=1.000000
+PalDamageRateAttack=1.000000
+PalDamageRateDefense=1.000000
+PlayerDamageRateAttack=1.000000
+PlayerDamageRateDefense=1.000000
+PlayerStomachDecreaceRate=1.000000
+PlayerStaminaDecreaceRate=1.000000
+PlayerAutoHPRegeneRate=1.000000
+PlayerAutoHpRegeneRateInSleep=1.000000
+PalStomachDecreaceRate=1.000000
+PalStaminaDecreaceRate=1.000000
+PalAutoHPRegeneRate=1.000000
+PalAutoHpRegeneRateInSleep=1.000000
+BuildObjectDamageRate=0.000000
+BuildObjectDeteriorationDamageRate=0.000000
+CollectionDropRate=2.000000
+CollectionObjectHpRate=2.000000
+CollectionObjectRespawnSpeedRate=2.000000
+EnemyDropItemRate=2.000000
+DeathPenalty=Item
+bEnablePlayerToPlayerDamage=False
+bEnableFriendlyFire=False
+bEnableInvaderEnemy=False
+bActiveUNKO=False
+bEnableAimAssistPad=False
+bEnableAimAssistKeyboard=False
+DropItemMaxNum=3000
+DropItemMaxNum_UNKO=100
+BaseCampMaxNum=128
+BaseCampWorkerMaxNum=25
+DropItemAliveMaxHours=1.000000
+bAutoResetGuildNoOnlinePlayers=False
+AutoResetGuildTimeNoOnlinePlayers=72.000000
+GuildPlayerMaxNum=20
+PalEggDefaultHatchingTime=0.500000
+WorkSpeedRate=1.000000
+bIsMultiplay=True
+bIsPvP=False
+bCanPickupOtherGuildDeathPenaltyDrop=False
+bEnableNonLoginPenalty=True
+bEnableFastTravel=True
+bIsStartLocationSelectByMap=True
+bExistPlayerAfterLogout=False
+bEnableDefenseOtherGuildPlayer=False
+CoopPlayerMaxNum=6
+ServerPlayerMaxNum=32
+ServerName="Sylvania - Nyamiwa"
+ServerDescription="Welcome to Sylvania"
+ServerPassword="MON_SUPER_MDP"
+PublicPort=8211
+PublicIP="games.nyamiwa.fr"
+RCONEnabled=False
+RCONPort=25575
+Region="FR"
+bUseAuth=True
+BanListURL="https://api.palworldgame.com/api/banlist.txt"
