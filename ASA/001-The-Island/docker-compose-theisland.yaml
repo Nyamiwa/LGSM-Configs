@@ -1,0 +1,46 @@
+version: '2.4'
+
+services:
+  asaserver:
+    build: .
+    image: acekorneya/asa_server:2_1_latest
+    container_name: asa_theisland 
+    restart: unless-stopped
+    environment:
+      - INSTANCE_NAME=theisland
+      - TZ=GMT+2
+      - BATTLEEYE=FALSE
+      - API=FALSE
+      - RCON_ENABLED=TRUE
+      - DISPLAY_POK_MONITOR_MESSAGE=FALSE
+      - RANDOM_STARTUP_DELAY=TRUE
+      - CPU_OPTIMIZATION=FALSE
+      - UPDATE_SERVER=TRUE
+      - CHECK_FOR_UPDATE_INTERVAL=24
+      - UPDATE_WINDOW_MINIMUM_TIME=12:00 AM
+      - UPDATE_WINDOW_MAXIMUM_TIME=11:59 PM
+      - RESTART_NOTICE_MINUTES=30
+      - ENABLE_MOTD=TRUE
+      - MOTD=Sylvania - Welcome to The Island !
+      - MOTD_DURATION=30
+      - MAP_NAME=TheIsland
+      - SESSION_NAME=Sylvania - The Island
+      - SERVER_ADMIN_PASSWORD=jMzNDIzMDcxO
+      - SERVER_PASSWORD=19422319
+      - ASA_PORT=7777
+      - RCON_PORT=27020
+      - MAX_PLAYERS=10
+      - SHOW_ADMIN_COMMANDS_IN_CHAT=FALSE
+      - CLUSTER_ID=DUxNDI3NDQ0M
+      - MOD_IDS=
+      - PASSIVE_MODS=
+      - CUSTOM_SERVER_ARGS=-crossplay -NoTransferFromFiltering -PublicIPForEpic=games.nyamiwa.fr
+    ports:
+      - "7777:7777/tcp"
+      - "7777:7777/udp"
+      - "27020:27020/tcp"
+    volumes:
+      - "/home/pokuser/asa_server/ServerFiles/arkserver:/home/pok/arkserver"
+      - "/home/pokuser/asa_server/Instance_theisland/Saved:/home/pok/arkserver/ShooterGame/Saved"
+      - "/home/pokuser/asa_server/Cluster:/home/pok/arkserver/ShooterGame/Saved/clusters"
+    mem_limit: 16G
